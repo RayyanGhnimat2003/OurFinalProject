@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#905EB1">
+
+    <!-- Photo at the top -->
+
+    <!-- ... other views ... -->
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/teacher" />
+
+    <EditText
+        android:id="@+id/editTextFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@id/imageViewPhoto"
+        android:layout_marginTop="16dp"
+        android:hint="Search"
+        tools:ignore="NotSibling" />
+
+
+    <ListView
+        android:id="@+id/listViewFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_below="@id/buttonSubmitFeedback"
+        android:layout_marginTop="-286dp"
+        android:background="#F2EDF4"
+        android:backgroundTint="#D9A8E3"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+
+    <Button
+        android:id="@+id/buttonSubmitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFeedback"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="251dp"
+        android:backgroundTint="#621D71"
+        android:text="Go to Course Feed Back"
+        app:iconGravity="end" />
+
+    <Button
+        android:id="@+id/buttonWithImagePlus"
+        android:layout_width="121dp"
+        android:layout_height="47dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/adde"
+        android:padding="16dp"
+        android:text="Button with Image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#F1EEF3"
+        android:backgroundTint="#D090DD"
+        android:gravity="center"
+        android:text="Feed Back Doctor"
+        android:textColorHighlight="#E3D7D7"
+        android:textColorHint="#DCD5D5"
+        android:textColorLink="#EDE5E5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
